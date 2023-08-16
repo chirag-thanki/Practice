@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>From with Table</title>
+</head>
+<body>
+    <h1 align="center">Pete's Pizza Delivery</h1>
+    <h2 align="center">Online Order Form</h2>
+
+<form action="../Practice_HTML/Source_files/Orderplace.html">
+    <table align="center" cellspacing="10">
+        <tr>
+            <td align="right"><strong>*Name:</strong></td>
+                <!-- <label for="name"><strong></strong></label> -->
+                <td><input type="text" name="name" id="name"></td>
+            
+            <td align="right"><strong>*Tel:</strong></td>
+            <td><input type="tel" name="tel" id="tel"></td>
+        </tr>
+
+        <tr>
+            <td align="right"><strong>*Address:</strong></td>
+            <td><input type="text" name="address" id="address"></td>
+            <td align="right"><strong>*Email:</strong></td>
+            <td><input type="email" name="email" id="email"></td>
+        </tr>
+
+        <tr>
+            <td align="right"><strong>*Town/City:</strong></td>
+            <td><input type="text" name="city" id="city"></td>
+        </tr>
+
+        <tr>
+            <td align="right"><strong>*Postcode</strong></td>
+            <td><input type="text" name="postcode" id="postcode" ></td>
+        </tr>
+    </table>
+
+    <table align="center" cellspacing="10">
+        <tr>
+            <th>Topping</th>
+            <th>Size</th>
+            <th>Extras</th>
+        </tr>
+
+        <tr>
+            <td><input type="radio" name="radio">Margherita</td>
+            <td><input type="radio" name="radio">Small</td>
+            <td><input type="checkbox">Mushrooms</td>
+        </tr>
+
+        <tr>
+            <td><input type="radio" name="radio">Four Seasons</td>
+            <td><input type="radio" name="radio">Medium</td>
+            <td><input type="checkbox">Green Papers</td>
+        </tr>
+
+        <tr>
+            <td><input type="radio" name="radio">Meat Feast</td>
+            <td><input type="radio" name="radio">Large</td>
+            <td><input type="checkbox">Anchovies</td>
+        </tr>
+
+        <tr>
+            <td colspan="3" align="right"><input type="checkbox">Extra Cheese</td>
+        </tr>
+    </table>
+
+    <!-- <hr> -->
+
+    <table align="center" cellspacing="10" >
+        <tr><td>Preferred Delivery Time:</td>
+            <td><input type="time"></td>
+        </tr>
+        
+        <tr>
+            <td>Deliviery Instructions:</td>
+            <td><textarea name="Instructions" id="" cols="30" rows="3"></textarea></td>
+        </tr>
+    </table>
+
+    <table align="center">
+        <tr>
+            <!-- <td><input type="submit">Submit Order</td> --> 
+            <!-- Commenting this for future referennce & understanding... -->
+            <!-- <td><input type="submit" value="Submit Order" ></td> -->
+            <!-- <td><h3><input type="button">Submit Order</h3></td> -->
+            <td><button><strong><big>Submit Order</big></strong></button></td>
+        </tr>
+    </table>
+
+ </form>
+</body>
+</html>
