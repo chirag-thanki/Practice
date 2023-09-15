@@ -1,0 +1,13 @@
+span{
+    border: 2px solid;
+    /* font-size:larger;
+    font-size: x-large;
+    font-size: xx-large; */
+    /* font-size: 50px; */
+    /* font-size: 10vh; */
+    
+    /* Note: 16px = 1em */
+    /* font-size: 32px; */
+    font-size: 2em; 
+
+}

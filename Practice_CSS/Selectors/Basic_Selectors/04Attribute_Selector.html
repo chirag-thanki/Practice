@@ -12,12 +12,12 @@
             width: 50px;
             border: 2px solid black;
             margin: 20px;
-            background-color: rgb(245, 5, 185);
+            background-color: rgb(245, 5, 185); /*This attribute selector has the higher prioprity.*/
             color: white;
             text-align: center;
         }
 
-        div[class*=container] {
+        div[class*=container] {  /*This shows attribute selector has higher priority*/
             height: 100px;
             width: 100px;
             border: 2px solid black;
@@ -28,15 +28,15 @@
         }
 
         .box-2{
-            background-color: tomato;
+            background-color: tomato; /*This isn't working*/
         }
 
         .box-3 {
-            background-color: blue;
+            background-color: blue; /*This isn't working*/
         }
 
         .container-4 {
-            background-color: brown;
+            background-color: brown; /*This isn't working*/
         }
 
     </style>

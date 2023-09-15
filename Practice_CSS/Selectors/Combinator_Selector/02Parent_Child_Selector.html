@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parent_Child_Selectors</title>
+    <style>
+
+    .parent{
+         width: 100%;
+        height: 500px;
+        background-color: teal;
+        color: khaki;
+        border: 3px solid red;
+
+    }
+    .child{
+        width: 70%;
+        height: 350px;
+        background-color: rgb(250, 5, 87);
+        color: rgb(255, 255, 255);
+        border: 3px solid rgb(0, 4, 255);
+    }
+    .grandchild{
+        width: 30%;
+        height: 200px;
+        background-color: rgb(255, 153, 0);
+        color: rgb(250, 250, 250);
+        border: 3px solid rgb(81, 255, 0);
+    }
+    </style>
+</head>
+<body>
+    <div class="parent">I'm Parent 
+        <p>This is parent paragraph</p>
+        <p>This is parent paragraph</p>
+        <p>This is parent paragraph</p>
+            <div class="child">I'm Child
+                <p>This is Child Para</p>
+                <p>This is Child Para</p>
+                    <div class="grandchild">I'm Grandchild
+                        <p>This is GrandChild Para</p>
+                    </div>
+            </div>
+    </div>
+
+</body>
+</html>
