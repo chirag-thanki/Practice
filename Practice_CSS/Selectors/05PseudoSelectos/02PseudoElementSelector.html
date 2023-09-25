@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Element Selector</title>
+    <style>
+        h1::before{
+            content: "--> ";
+        }
+
+        h1::after{
+            content: " <--";
+        }
+
+        p::first-letter{
+            font-size: 80px;
+            color: teal;
+        }
+        p::first-line{
+            font-size: 50px;
+            color: brown;
+        }
+        label::selection{
+            font-size: 100px;
+            background-color: teal;
+            color: khaki;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pseudo Element Selector (::)</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi amet hic unde!</p>
+    <label for="">This is Label</label>
+</body>
+</html>
