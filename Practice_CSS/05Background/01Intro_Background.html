@@ -23,9 +23,9 @@
         .background-repeat{
             background-image:url(../../../Files/Image/background_nature.jpg);
             /* background-repeat: no-repeat; */
-            /* background-repeat:repeat-x; */
+            /* background-repeat: repeat; */
+            background-repeat:repeat-x;
             /* background-repeat:repeat-y; */
-            background-repeat: repeat;
             
         }
         .background-position{
@@ -42,17 +42,18 @@
             background-image:url(../../../Files/Image/background_nature.jpg);
             background-repeat: no-repeat;
             background-size: auto;
-            background-size:contain;
             background-size: cover;  
+            background-size:contain;
         }
         
         .background-clip{
             background-image:url(../../../Files/Image/background_nature.jpg);
             background-repeat: no-repeat;
+            background-size: cover;
             padding: 100px;
+            background-clip:content-box;
             background-clip: border-box;
             background-clip: padding-box;
-            background-clip:content-box;
         }
         
         .background-attachment{
@@ -68,19 +69,24 @@
         .background-origin{
             background-image:url(../../../Files/Image/background_nature.jpg);
             background-repeat: no-repeat;
+            background-size: cover;
             padding: 100px;
+            background-origin:content-box;
             background-origin: border-box;
             background-origin:padding-box;
-            background-origin:content-box;
         }
 
         .background-shorthand{
+            border: 10px dotted blue;
             background: url(../../../Files/Image/background_nature.jpg) no-repeat fixed center center/cover;
         }
-
+        
         .background-multiple{
+            border: 10px dotted blue;
             background: url(../../../Files/Image/04-DJ-Duvvada-Jagannadham-Movie-Latest-Photos-HD-Stills-Allu-Arjun-Pooja-Hegde.jpg), url(../../../Files/Image/background_nature.jpg), url(../../../Files/Image/background_nature2.jpg);
-            background-repeat: no-repeat;
+            /* background-repeat: no-repeat; 
+            Applies to all backgrounds */
+            background-repeat: no-repeat, no-repeat, repeat;
             /* background-size: width height; always follow this order */
             background-size: 500px 300px, 300px 200px, contain;
             background-position: 0px 0px, 700px 250px, center;
@@ -108,8 +114,8 @@
 <div class="background-position">background-position</div>
 <div class="background-size">background-size</div>
 <div class="background-clip">background-clip</div>
-<div class="background-attachment">background-attachment</div>
 <div class="background-origin">background-origin</div>
+<div class="background-attachment">background-attachment</div>
 <div class="background-shorthand">background-shorthand</div>
 <div class="background-multiple">background-multiple</div>
 </body>
