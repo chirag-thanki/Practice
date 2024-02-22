@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature of different places</title>
+    <link href="Src/cjt_favicon.ico" rel="icon">
+    
+    </head>
+
+    <body>
+        <table border="1">
+
+            <tr align="center" bgcolor="lightpink">
+                
+                <!--Coding is all about how easily can you use
+                different tools to make your code simple and short.
+                Here, I first gave (align) attribute to individual 
+                table-data(td), but then I realized what if I give 
+                (align) attribute to whole table-row(tr),
+                I gave and the output remained unchanged.
+                So this is what we need to learn while coding.-->
+
+                <td align="center"><b>Place</b></td>
+                <td align="center"><b>State</b></td>
+                <td align="center"><b>Maximum <br>Temperature <br>in C<sup>o</sup></b></td>
+            </tr>
+
+            <tbody bgcolor="lightblue">
+            <tr align="center">
+                <td>Wardha</td>
+                <td rowspan="2">Maharashtra</td>
+                <td>47.5</td>
+            </tr>
+
+            <tr align="center">
+                <td>Akola</td>
+                <!--<td>Maharashtra</td>-->
+                <td>46.4</td>
+            </tr>
+
+            <tr align="center">
+                <td>Khajuraho</td>
+                <td rowspan="2">Madhya Pradesh</td>
+                <td>46.4</td>
+            </tr>
+
+            <tr align="center">
+                <td>Sagar</td>
+                <!--<td>Madhya Pradesh</td>-->
+                <td>46.2</td>
+            </tr>
+
+        </tbody>
+        </table>
+    </body>
+</html>

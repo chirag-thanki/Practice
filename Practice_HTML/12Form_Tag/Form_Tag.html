@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>From In HTML</title>
+</head>
+<body>
+    <fieldset>
+        <legend><h2>Admission Form</h2></legend>
+        <form action="">
+            <h3>Personal Details</h3>
+                <label for="name">Name: </label><input type="text" placeholder="Enter Your Name"> <br><br>
+                <label for="password">Password: </label><input type="password" placeholder="Enter your password"><br><br>
+                <label for="email">Email: </label><input type="email" placeholder="Enter your email address"> <br><br>
+                <label for="gender">Gender: </label><input type="radio" name="nm" id="nm">Male <input type="radio" name="nm" id="nm">Female <br><br>
+                <label for="contact">Contact#: </label> <input type="tel" placeholder="Enter 10-digits Mo."><br><br>
+        <hr>
+            <h3>Educational Details</h3>
+                <label for="degree">Degree: </label>
+
+                        <select name="select" id="select">
+                                <Option hidden>Select your degree</Option>
+                                <Option>B.Tech</Option>
+                                <Option>B.A</Option>
+                                <Option>B.Com</Option>
+                                <Option>B.Sc</Option>
+                                <Option>M.Tech</Option>
+                                <Option>M.Sc</Option>
+                                <Option>M.A</Option>
+                        </select><br><br>
+                        <label for="hobbies">Hobbies: </label><input type="checkbox" name="ckb" id="ckb">Cricket
+                        <input type="checkbox" name="ckb" id="ckb">Football
+                        <input type="checkbox" name="ckb" id="ckb">Badminton
+                        <input type="checkbox" name="ckb" id="ckb">Running
+                        <br><br>
+                <label for="address">Address: </label><br><textarea name="textarea" id="textarea" cols="30" rows="5"></textarea>
+                <br><br>
+                <label for="resume">Attach Resume: </label><input type="file"><br><br>
+                <input type="submit">&nbsp;&nbsp;&nbsp;<input type="reset" name="reset" id="reset">
+            
+
+
+        </form>
+
+    </fieldset>
+</body>
+</html>
