@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task-1</title>
+    <style>
+      h2 {
+        margin-bottom: 0;
+      }
+      ol {
+        margin-top: 0;
+      }
+
+      .form {
+        background-color: lightslategray;
+        padding: 10px;
+        display: none;
+      }
+      #hover {
+        margin: 20px;
+      }
+      /* table,
+      td {
+        border: 1px solid black;
+      } */
+
+      .button {
+        font-size: 16px;
+        font-weight: bold;
+      }
+      #hover:hover ~ .form {
+        display: block;
+      }
+
+      span {
+        display: inline-block;
+        font-size: 40px;
+        text-shadow: 2px 2px 2px grey;
+        transform: rotate(-30deg);
+        /* transform:translate(20px, 20px); (X-Axis, Y-Axis) */
+        margin-top: 50px;
+        margin-left: 250px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Task about Form & Hover</h1>
+    <h2>Instructions</h2>
+    <ol>
+      <li>
+        Create a form with inputs firstname, lastname, phone no, email,
+        password, submit, reset button
+      </li>
+      <li>
+        take one h2 tag and write "Form" in it and when you hover over it, the
+        form should display
+      </li>
+    </ol>
+    <hr />
+
+    <h2 id="hover">Hover over me to see the Form</h2>
+    <div class="form">
+      <form action="">
+        <table>
+          <tr>
+            <td><label for="fname">First Name:</label></td>
+            <td><input type="text" name="fname" value="Chirag" /></td>
+          </tr>
+
+          <tr>
+            <td><label for="lname">Last Name:</label></td>
+            <td><input type="text" name="lname" value="Thanki" readonly /></td>
+          </tr>
+
+          <tr>
+            <td><label for="email">Email:</label></td>
+            <td><input type="email" name="email" required /></td>
+          </tr>
+
+          <tr>
+            <td><label for="password">Password:</label></td>
+            <td><input type="password" name="password" required /></td>
+          </tr>
+
+          <tr class="lastrow">
+            <td></td>
+            <td>
+              <input class="button" type="submit" />
+              <input class="button" type="reset" />
+            </td>
+          </tr>
+        </table>
+      </form>
+    </div>
+    <pre>
+        #hover:hover ~ .form {
+            display: block;
+          }
+
+          - This Tilde (~) sign is used to define relationship between hover and .form
+          - We can use plus (+) sign, too. 
+    </pre>
+    <span>Done👍</span>
+  </body>
+</html>
