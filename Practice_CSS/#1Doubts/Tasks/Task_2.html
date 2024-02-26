@@ -5,31 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Task-2</title>
     <style>
-      table,
-      td,
-      th {
+      .main{
         border: 2px solid black;
       }
-      table {
+      /* Q. BORDER IS NOT APPLIED
+      A.  */
+
+      
+      .subtable {
         background-color: lightblue;
-        width: auto;
+        border: 2px solid black;
+        margin: 0 auto;
       }
     </style>
   </head>
   <body>
-    <table>
-      <thead>
-        <th colspan="2">Table</th>
-      </thead>
+    <table class="main">
       <tbody>
-        <form action="">
-          <tr>
-            <td><label for="fname">First Name:</label></td>
-            <td><input type="text" name="fname" value="Chirag" /></td>
-          </tr>
-          <tr>
+        <tr>
+          <table class="subtable">
+            <caption>Table</caption>
+            <tr>
+            <form action="">
+              <td><label for="fname">First Name:</label></td>
+              <td><input type="text" name="fname" value="Chirag" readonly /></td>
+            </tr>
+            <tr>
             <td><label for="fname">Last Name:</label></td>
-            <td><input type="text" name="lname" value="Thanki" /></td>
+            <td><input type="text" name="lname" value="Thanki" disabled /></td>
           </tr>
           <tr>
             <td><label for="email">Email:</label></td>
@@ -46,6 +49,8 @@
             </td>
           </tr>
         </form>
+      </table>
+    </tr>
       </tbody>
       <tfoot>
         <tr>
@@ -53,10 +58,10 @@
             <iframe
               width="560"
               height="315"
-              src="https://www.youtube.com/embed/KUN5Uf9mObQ?si=2mXqiRalwyKzbMSPautoplay=1&mute=1"
+              src="https://www.youtube.com/embed/KUN5Uf9mObQ?si=2mXqiRalwyKzbMSP&autoplay=1&mute=1"
               title="YouTube video player"
               frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share;"
               allowfullscreen
             ></iframe>
           </td>
