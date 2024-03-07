@@ -1,0 +1,16 @@
+Attributes of Form Tag
+
+1. action - The action attributes define the action to be performed when the form is submitted. It is usually the url for the server where the form data is to be sent.
+2. target - defines where to receive the response after submitting form
+	-blank - display in new tab
+	-self - display in current tab
+	-parent - display in parent frame
+	-top - display in full body of window
+	-framename - displayed in a named iframe
+3. method - defines method to use when submitting form data
+	-get
+	-post
+4. autocomplete
+5. novalidate
+6. name
+7. enctype

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Input Types</title>
+</head>
+
+<body>
+    <form>
+        <!-- <form action="" novalidate> -->
+        <!-- novalidate-Used when we want to skip validations that we've putted. e.g. required, min, max, etc -->
+        <label for="username">Username :</label>
+        <!-- <input type="text" placeholder="Enter username" autocomplete="on" autocapitalize="words"> <br> <br> -->
+
+        <!-- <input type="text" placeholder="Enter username" required pattern="[a-zA-Z]+"> <br> <br> For alphabets only input -->
+        <!-- <input type="text" placeholder="Enter username" required pattern="[0-9]+"> <br> <br> For Numbers input only -->
+        <input type="text" title="Min 2, Max 5 characters" placeholder="Enter username" required
+            pattern="[a-zA-Z]{2,5}"> <br> <br>
+        <!-- For alphabets min max -->
+
+        <label for="password">Password :</label>
+        <input type="password" placeholder="Enter password" minlength="8"> <br> <br>
+
+        <label for="email">Email :</label>
+        <input type="email" placeholder="Enter Email" readonly> <br> <br>
+        <!-- readonly- For showing only input but you can't enter values. It's only read-only. -->
+
+        <label for="color">Color :</label>
+        <input type="color" placeholder="choose color"> <br> <br>
+
+        <label for="date">Date :</label>
+        <input type="date"> <br> <br>
+
+        <label for="datetime">Datetime :</label>
+        <input type="datetime"> <br> <br>
+
+        <label for="datetime-local">Datetime-local :</label>
+        <input type="datetime-local"> <br> <br>
+
+
+        <label for="file">Upload file :</label>
+        <!-- accept is an attribute of form. -->
+        <!-- <input type="file" accept="audio/*"> <br> <br> For uploading only audio files-->
+
+        <!-- <input type="file" accept="image/*"> <br> <br> For uploading only image files -->
+
+        <!-- <input type="file" accept="video/*"> <br> <br> For uploading only video files -->
+
+        <!-- <input type="file" accept=".png/*"> <br> <br> For uploading specific extension files
+
+        <input type="file" accept=".jpg/*"> <br> <br> For uploading specific extension files
+
+        <input type="file" accept=".gif/*"> <br> <br> For uploading specific extension files -->
+
+        <!-- <input type="file" accept=".mp4/*"> <br> <br> -->
+        <input type="file">
+        <!-- <input type="file" multiple> For uploading multiple files -->
+
+        <label for="hidden">Hidden :</label>
+        <input type="hidden" placeholder="hidden"> <br> <br>
+
+        <label for="image">Image :</label>
+        <input type="image" value="send"> <br> <br>
+        <!-- Image can be used as submit buton -->
+
+        <label for="month">Month :</label>
+        <input type="month"> <br> <br>
+
+        <label for="quantity">Quantity :</label>
+        <input type="number" value="1" required min="1" max="10" step="2"> <br> <br>
+        <!-- step="2" - for incremental steps like step 2 increase value to 1+2=3 -->
+
+        <label for="range">Range :</label>
+        <input type="range"> <br> <br>
+
+        <label for="gender">Gender :</label>
+        <input type="radio" name="x" checked>Male <input type="radio" name="x">Female <br> <br>
+        <!-- Note: to select any one, you have to keep name attribute same for both male & female inputs -->
+
+        <label for="checkbox">Language :</label>
+        <input type="checkbox" checked> English
+        <!-- checked attribute is used when we want to by default ticked something. Here English language. -->
+        <input type="checkbox"> Hindi
+        <input type="checkbox"> Gujarati <br> <br>
+
+        <label for="search">Search :</label>
+        <input type="search"> <br> <br>
+
+        <label for="tel">Tel :</label>
+        <input type="tel" value="+91"> <br> <br>
+
+        <label for="time">Time :</label>
+        <input type="time"> <br> <br>
+
+        <label for="url">URL :</label>
+        <input type="url"> <br> <br>
+
+        <label for="week">Week :</label>
+        <input type="week"> <br> <br>
+
+        <label for="submit"><input type="submit"></label>
+        <label for="reset"><input type="reset"></label>
+
+
+    </form>
+</body>
+
+</html>
