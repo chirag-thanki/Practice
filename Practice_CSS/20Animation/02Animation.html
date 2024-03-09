@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Concept of Animation </title>
+    <title>Animation in CSS</title>
     <style>
         .box {
             width: 100px;
@@ -30,19 +30,17 @@
                 background-color: green;
             }
         }
-
-        /* Now giving animation to div.main */
-        .box {
-            animation-name: abc;
-            animation-duration: 5s;
-            /* We can give the above property in the same .box css. I've given separately just to understand the concept. */
-        }
     </style>
 </head>
 
 <body>
-    <div class="box"></div>
-    <p>Here, we're changing the color of div from red to green.</p>
+    <div class="box">
+    </div>
+    <p>Animation is used to move/animate this red box to diffrent location with diffrent styles.</p>
+    <p>We want to move this red-box in square path (e.g. First initial position, then top-right side, then
+        bottom-right
+        side, then bottom-left side and then again back to initial position.)</p>
+    <p>First we're giving this box position absolute and body relative position.</p>
 </body>
 
 </html>
