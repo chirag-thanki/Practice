@@ -5,11 +5,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Animation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: lightslategray;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: auto;
+            height: 100vh;
+        }
+
+        .ball {
+            width: 100px;
+            height: 100px;
+            border: 2px solid white;
+            background-color: yellowgreen;
+            border-radius: 50%;
+            overflow: hidden;
+            padding: 20px 8px;
+        }
+
+        p,
+        b {
+            /* margin-top: 20px; */
+            /* padding: 20px; */
+            background-color: transparent;
+        }
+    </style>
 </head>
 
 <body>
     <div class="ball">
-        <p>Mouse over me Spin and throw me</p>
+        <p>Mouse over me to <b>Spin</b> and <b>Throw</b> </p>
     </div>
 </body>
 
