@@ -1,0 +1,3 @@
+Inner Join- takes only data which are common in both table.
+
+Trigger - It is used to make changes in many tables with the change at one place.

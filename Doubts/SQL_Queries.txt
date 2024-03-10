@@ -1,0 +1,11 @@
+INSERT INTO department VALUES ('D1', 'HR', 1), ('D2', 'IT', 2), ('D3', 'MRKT', 4), ('D4', 'Finance', 5);
+
+
+
+INSERT INTO employee VALUES ('Ram', 'Delhi'), ('Varun', 'Chandigarh'), ('Ravi', 'Chandigrarh'), ('Amrit', 'Delhi'), ('Nitin', 'Noida');
+
+INSERT INTO employee (E_no, E_Name, Address)
+VALUES ('Chirag Thanki', 'Ahmedabad, India'), ('Saurav Mehta', 'Calgary, Canada'), ('Kishan', 'Bhavnagar, India'), ('Deepak Verma', 'Bengaluru, India'), ('Darshan Thanki', 'Brisbane, Australia');
+
+SELECT employee.E_Name, employee.Address, department.Dept_Name
+FROM employee INNER JOIN department ON employee.E_No=department.E_No;
