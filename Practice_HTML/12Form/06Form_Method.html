@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        input {
+            border: 2px solid #c7bebe;
+            outline: none;
+        }
+
+        input:focus {
+            border: 2px solid #726f6f;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Form Using "Method="get" </h1>
+    <form action="06Submit.html" method="get">
+        First name: <input type="text" name="fname"><br><br>
+        Last name: <input type="text" name="lname"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+    <hr>
+    <h1>Form Using "Method="post" </h1>
+    <form action="06Submit.html" method="post">
+        First name: <input type="text" name="fname"><br><br>
+        Last name: <input type="text" name="lname"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+    <hr>
+    <pre>The main difference between "form method = get/post" is that 
+        ->when we have form method=get, the data we enter while submitting form is shown in the Browser's URL.
+        ->While when we set the form method=post, the data we enter doesn't show in the Browser's URL which adds security and privacy feature to our data and form.</pre>
+
+</body>
+
+</html>
